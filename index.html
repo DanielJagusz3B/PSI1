@@ -14,7 +14,16 @@
         <p id="result"></p> 
 
         <script>
+            const liczba1 = document.querySelector('#liczba1');
+            const liczba2 = document.querySelector('#liczba2');
+            const sum = document.querySelector('#sum');
+            const p = document.querySelector('#result');
 
+            btn.addEventListener('click', suma);
+            function suma(){
+                const sum = liczba1.value*1+liczba2.value*1;
+                p.innerText = "Wynik: ${sum}";
+            }
         </script>
     </main>
 </body>
